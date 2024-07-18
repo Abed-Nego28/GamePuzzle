@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="puzzle-board" class="puzzle-board">
+            <!-- Les pièces du puzzle seront générées dynamiquement ici -->
+        </div>
+        <div class="controls">
+            <button id="start-button">Démarrer le jeu</button>
+            <label for="level-select">Niveau :</label>
+            <select id="level-select">
+                <option value="3">Facile (3x3)</option>
+                <option value="4">Moyen (4x4)</option>
+                <option value="5">Difficile (5x5)</option>
+            </select>
+            <div class="score-timer">
+                Score : <span id="score">0</span><br>
+                Temps : <span id="timer">0s</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
